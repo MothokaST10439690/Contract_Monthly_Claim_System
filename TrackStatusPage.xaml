@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Contract_Monthly_Claim_System.TrackStatusPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="400" Width="850">
+    
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Track Claim Status" FontSize="20" FontWeight="Bold" Margin="0,0,0,20"/>
+            <ListBox>
+                <ListBoxItem>Claim #001 - Approved</ListBoxItem>
+                <ListBoxItem>Claim #002 - Pending Verification</ListBoxItem>
+                <ListBoxItem>Claim #003 - Submitted</ListBoxItem>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:Contract_Monthly_Claim_System"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
+
+    <Grid>
+        <StackPanel>
+
+            <!-- Navigation Panel -->
+            <StackPanel Orientation="Horizontal" Background="#2C3E50" Height="50">
+                <Button x:Name="btnSubmit" Content="Submit Claim" Width="120" Margin="5" Click="SubmitClaim_Click"/>
+                <Button x:Name="btnApprove" Content="Approve Claim" Width="120" Margin="5" Click="ApproveClaim_Click"/>
+                <Button x:Name="btnUpload" Content="Upload Documents" Width="150" Margin="5" Click="UploadDocs_Click"/>
+                <Button x:Name="btnTrack" Content="Track Status" Width="120" Margin="5" Click="TrackStatus_Click"/>
+            </StackPanel>
+
+            <!-- Content Area -->
+            <ContentControl x:Name="MainContent" Margin="10,10,10,10"/>
+        </StackPanel>
     </Grid>
 </Window>
