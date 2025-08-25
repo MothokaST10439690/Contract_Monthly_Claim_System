@@ -73,5 +73,12 @@ namespace Contract_Monthly_Claim_System
         {
             MainContent.Content = new TrackStatusPage();
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            // Reset to role selection page
+            MainContent.Content = new RoleSelectionPage();
+            HideAllButtons();  // Hide navigation buttons again
+        }
     }
 }
